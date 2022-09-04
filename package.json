@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "pnpm run lint && vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
     "lint:style": "stylelint --fix \"src/**/*.{css,scss}\"",
-    "lint": "npm run lint:script && npm run lint:style",
+    "lint": "pnpm run lint:script && pnpm run lint:style",
     "postinstall": "husky install"
   },
   "lint-staged": {
@@ -54,6 +54,8 @@
     "stylelint-config-standard-scss": "^5.0.0",
     "typescript": "*",
     "vite": "^3.0.7",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-svgr": "^2.2.1"
   }
 }

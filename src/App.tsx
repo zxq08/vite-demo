@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Header } from './component/index'
+import { Header } from './component/Header/index'
 import './App.css'
 
 function App() {
